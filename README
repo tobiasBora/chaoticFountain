@@ -1,0 +1,9 @@
+**** README ****
+
+chaoticFountain = simulation d'une fontaine chaotique, avec la création de bases dédiées à la simulation.
+
+Pour envoyer un commit :
+git add *
+git commit -m 'comment commit'
+git remote add origin https://github.com/tobiasBora/git/chaoticFountain.git
+git push origin master
