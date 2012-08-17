@@ -15,7 +15,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     // On crée la scène :
     m_scene = new QGraphicsScene();
-    QGraphicsRectItem *rect = m_scene->addRect(QRectF(0, 0, 100, 100));
+    // m_scene->setBackgroundBrush(Qt::blue);
+    // ##### On change ici la couleur de fond #####
+    m_scene->setBackgroundBrush(QColor(229,212,145));
+    // QGraphicsRectItem *rect = m_scene->addRect(QRectF(0, 0, 100, 100));
 
     // On créé la zone de dessin :
     m_gview = new QGraphicsView(m_scene);

@@ -8,7 +8,8 @@ class CAD_Roue : public CalcAndDraw
 {
 public:
     CAD_Roue(QGraphicsScene * scene, QGraphicsView * gview);
-    void draw();
+    virtual void  draw();
+    virtual void test();
 };
 
 #endif // CAD_ROUE_H

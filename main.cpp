@@ -1,6 +1,8 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
 #include <QTextCodec>
+#include <QDebug>
+
 
 int main(int argc, char *argv[])
 {
@@ -8,6 +10,10 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));
 
+    qDebug() << "########################################";
+    qDebug() << "########  Debut de l'application #######";
+    qDebug() << "########################################";
+    
     QApplication a(argc, argv);
     MainWindow w;
     w.showMaximized();

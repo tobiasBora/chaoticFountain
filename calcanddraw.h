@@ -11,19 +11,19 @@ class CalcAndDraw
 public:
     CalcAndDraw(QGraphicsScene * scene, QGraphicsView * gview);
     // lie le fichier à la navette ;
-    void linkNavette(Navette * navette);
+    virtual void linkNavette(Navette * navette);
     // crée les sous objets :
-    void createSsObjects();
+    virtual void createSsObjects();
     // Dessine l'objet courant
-    void draw();
+    virtual void draw();
     // Demande d'afficher le dessin final
-    void callDraw();
+    virtual void callDraw();
     // Demande aux sous objets d'afficher leurs dessins
-    void askDraw();
+    virtual void askDraw();
     // Calcule :
-    void calc();
+    virtual void calc();
     // Demande aux sous objets de calculer :
-    void askCalc();
+    virtual void askCalc();
 
 protected:
     QGraphicsScene * m_scene;
