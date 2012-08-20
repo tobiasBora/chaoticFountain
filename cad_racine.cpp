@@ -22,6 +22,8 @@ void CAD_Racine::draw()
     // QGraphicsRectItem *rect = m_scene->addRect(QRectF(150, 150, 100, 100));
     qDebug() << "CAD_Racine : askDraw ask";
     askDraw();
+
+    // On affiche le dessin final
     m_gview->show();
 }
 
